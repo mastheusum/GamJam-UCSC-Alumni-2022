@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Resources/Sprites/Atlas/Options.tres" type="Texture" id=1]
+[ext_resource path="res://Resources/Sprites/Atlas/complete_heart.tres" type="Texture" id=2]
+[ext_resource path="res://Resources/Sprites/Atlas/nolife_health.tres" type="Texture" id=3]
+[ext_resource path="res://Resources/Sprites/Atlas/hud_coins.tres" type="Texture" id=4]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="HudCoins" type="TextureRect" parent="."]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 20.0
+margin_bottom = 20.0
+rect_scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Options" type="TextureButton" parent="."]
+margin_left = 972.0
+margin_top = 4.0
+margin_right = 988.0
+margin_bottom = 20.0
+rect_scale = Vector2( 3, 3 )
+texture_normal = ExtResource( 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_left = 4.0
+margin_top = 554.0
+margin_right = 44.0
+margin_bottom = 594.0
+rect_min_size = Vector2( 44, 44 )
+custom_constants/separation = 33
+
+[node name="TextureProgress1" type="TextureProgress" parent="HBoxContainer"]
+margin_right = 11.0
+margin_bottom = 11.0
+rect_min_size = Vector2( 11, 11 )
+rect_scale = Vector2( 4, 4 )
+value = 70.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+fill_mode = 3
+
+[node name="TextureProgress2" type="TextureProgress" parent="HBoxContainer"]
+margin_left = 44.0
+margin_right = 55.0
+margin_bottom = 11.0
+rect_min_size = Vector2( 11, 11 )
+rect_scale = Vector2( 4, 4 )
+value = 70.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+fill_mode = 3
+
+[node name="TextureProgress3" type="TextureProgress" parent="HBoxContainer"]
+margin_left = 88.0
+margin_right = 99.0
+margin_bottom = 11.0
+rect_min_size = Vector2( 11, 11 )
+rect_scale = Vector2( 4, 4 )
+value = 70.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+fill_mode = 3

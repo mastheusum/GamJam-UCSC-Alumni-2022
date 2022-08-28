@@ -24,6 +24,11 @@ config/name="GameJam UCSC Alumni"
 run/main_scene="res://Scenes/World.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Gui="*res://Instantiable/GUI.tscn"
+Hud="*res://Instantiable/HUD.tscn"
+
 [input]
 
 ui_left={

@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=2]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/HealthUI.png-71f31c23e896a6a533cef887582bf61c.stex"
+
+[resource]
+atlas = SubResource( 1 )
+region = Rect2( 0, 0, 11, 11 )
