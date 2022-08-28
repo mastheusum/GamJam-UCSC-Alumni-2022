@@ -1,12 +1,12 @@
 [gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://Scripts/CharacterController.gd" type="Script" id=1]
-[ext_resource path="res://Resources/Materials/White.material" type="Material" id=2]
-[ext_resource path="res://Resources/Materials/EyeColor.material" type="Material" id=3]
-[ext_resource path="res://Resources/Materials/Main.material" type="Material" id=4]
-[ext_resource path="res://Resources/Materials/Main2.material" type="Material" id=5]
-[ext_resource path="res://Resources/Materials/Main_Light.material" type="Material" id=6]
-[ext_resource path="res://Resources/Materials/Black.material" type="Material" id=7]
+[ext_resource path="res://Resources/Character/White.material" type="Material" id=2]
+[ext_resource path="res://Resources/Character/EyeColor.material" type="Material" id=3]
+[ext_resource path="res://Resources/Character/Black.material" type="Material" id=4]
+[ext_resource path="res://Resources/Character/Main.material" type="Material" id=5]
+[ext_resource path="res://Resources/Character/Main2.material" type="Material" id=6]
+[ext_resource path="res://Resources/Character/Main_Light.material" type="Material" id=7]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Character_CUBezierCurve000"
@@ -17,7 +17,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 2194883,
 "index_count": 960,
-"material": ExtResource( 4 ),
+"material": ExtResource( 5 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0.177238, 1.17605, -0.276932, 0.555529, 0.417447, 0.416971 ), AABB( 0.177238, 1.09984, -0.333494, 1.03635, 0.578878, 0.578218 ), AABB( 0.195917, 1.09984, -0.333494, 1.01767, 0.578878, 0.578218 ), AABB( 0.854905, 1.09984, -0.333494, 0.35868, 0.578878, 0.578218 ), AABB( -0.732766, 1.17605, -0.276932, 0.555529, 0.417447, 0.416971 ), AABB( -1.21359, 1.09984, -0.333494, 1.03635, 0.578878, 0.578218 ), AABB( -1.21359, 1.09984, -0.333494, 1.01767, 0.578878, 0.578218 ), AABB( -1.21359, 1.09984, -0.333494, 0.35868, 0.578878, 0.578218 ) ],
 "vertex_count": 224
@@ -29,13 +29,13 @@ surfaces/1 = {
 "blend_shape_data": [  ],
 "format": 2194883,
 "index_count": 696,
-"material": ExtResource( 6 ),
+"material": ExtResource( 7 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 1.17494, 1.13029, -0.301915, 0.0386488, 0.518535, 0.517944 ), AABB( 1.17494, 1.08497, -0.340503, 0.49983, 0.676353, 0.611713 ), AABB( 1.17494, 1.08497, -0.340503, 0.524461, 0.676353, 0.611713 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -1.21359, 1.13029, -0.301915, 0.0386488, 0.518535, 0.517944 ), AABB( -1.67477, 1.08497, -0.340503, 0.49983, 0.676353, 0.611713 ), AABB( -1.6994, 1.08497, -0.340503, 0.524461, 0.676353, 0.611713 ) ],
 "vertex_count": 152
 }
 
-[sub_resource type="Skin" id=67]
+[sub_resource type="Skin" id=2]
 resource_name = "Skin"
 bind_count = 29
 bind/0/name = "Root"
@@ -126,7 +126,7 @@ bind/28/name = "PoleTarget.R"
 bind/28/bone = -1
 bind/28/pose = Transform( 1, 0, 7.15256e-07, -5.68434e-14, 1, -1.19209e-07, -7.15256e-07, 0, 1, 0.542493, -0.246107, -0.963032 )
 
-[sub_resource type="ArrayMesh" id=68]
+[sub_resource type="ArrayMesh" id=3]
 resource_name = "Character_CUBezierCurve002"
 surfaces/0 = {
 "aabb": AABB( -0.68383, 0.108545, -0.444311, 1.36766, 1.68171, 0.823117 ),
@@ -135,7 +135,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 2194883,
 "index_count": 1932,
-"material": ExtResource( 4 ),
+"material": ExtResource( 5 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0.134411, 0.108545, -0.253046, 0.549419, 0.247162, 0.488357 ), AABB( -0.622397, 0.262782, -0.17162, 1.24479, 1.38086, 0.550426 ), AABB( -0.595461, 0.108545, -0.444311, 1.19092, 1.11112, 0.823117 ), AABB( -0.626871, 0.453377, -0.444311, 1.25374, 1.06511, 0.754469 ), AABB( -0.410052, 0.974096, -0.444311, 0.820103, 0.816162, 0.736171 ), AABB( -0.166753, 1.63709, -0.23372, 0.333507, 0.153169, 0.315647 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0.613148, -0.444311, 0.622397, 1.16782, 0.796962 ), AABB( 0.102901, 1.40547, -0.279239, 0.227749, 0.316097, 0.493577 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.622397, 0.613148, -0.43763, 0.622397, 1.16782, 0.79028 ), AABB( -0.330651, 1.40547, -0.279239, 0.227749, 0.316097, 0.493577 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0.108545, -0.432914, 0.68383, 1.22279, 0.81172 ), AABB( 0.0519579, 0.108545, -0.327903, 0.631872, 0.596278, 0.678272 ), AABB( -0.68383, 0.108545, -0.432914, 0.68383, 1.22279, 0.81172 ), AABB( -0.68383, 0.108545, -0.327903, 0.631872, 0.596278, 0.678272 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.68383, 0.108545, -0.253046, 0.549419, 0.247162, 0.488357 ) ],
 "vertex_count": 348
@@ -147,7 +147,7 @@ surfaces/1 = {
 "blend_shape_data": [  ],
 "format": 2194883,
 "index_count": 384,
-"material": ExtResource( 6 ),
+"material": ExtResource( 7 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0.138664, 0.0102488, -0.237237, 0.545166, 0.113338, 0.440059 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.394966, 0.0183984, -0.237237, 0.789932, 0.0982423, 0.412942 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0.138664, 0.0102488, -0.237237, 0.545166, 0.113338, 0.440059 ), AABB( 0.138664, 0.0102488, -0.237237, 0.545166, 0.113338, 0.440059 ), AABB( -0.68383, 0.0102488, -0.237237, 0.545166, 0.113338, 0.440059 ), AABB( -0.68383, 0.0102488, -0.237237, 0.545166, 0.113338, 0.440059 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.68383, 0.0102488, -0.237237, 0.545166, 0.113338, 0.440059 ) ],
 "vertex_count": 102
@@ -159,7 +159,7 @@ surfaces/2 = {
 "blend_shape_data": [  ],
 "format": 2194883,
 "index_count": 252,
-"material": ExtResource( 5 ),
+"material": ExtResource( 6 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.322832, 0.660599, 0.168968, 0.645664, 0.924593, 0.218077 ), AABB( -0.176506, 0.660599, 0.352651, 0.353012, 0.0269357, 0.0261551 ), AABB( -0.320351, 0.959142, 0.310158, 0.640712, 1.00136e-05, 1.00136e-05 ), AABB( -0.298666, 0.976616, 0.168968, 0.597332, 0.608576, 0.200439 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0.687535, 0.168968, 0.322832, 0.897657, 0.218077 ), AABB( 0.121241, 1.40547, 0.168968, 0.0896105, 0.140013, 0.0453794 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.322832, 0.687535, 0.168968, 0.322832, 0.897657, 0.218077 ), AABB( -0.210841, 1.40547, 0.168968, 0.0896005, 0.140013, 0.0453794 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0.660599, 0.272594, 0.322832, 0.527032, 0.114452 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.322832, 0.660599, 0.272594, 0.322832, 0.527032, 0.106212 ) ],
 "vertex_count": 56
@@ -174,13 +174,13 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 2194883,
 "index_count": 720,
-"material": ExtResource( 4 ),
+"material": ExtResource( 5 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0.368057, 2.63177, -0.274178, 0.643649, 0.641793, 0.43855 ), AABB( 0.368057, 2.63177, -0.536025, 0.876247, 1.09979, 0.700397 ), AABB( 0.455909, 3.02993, -0.631524, 0.788396, 0.730537, 0.719675 ), AABB( -1.01171, 2.63177, -0.274178, 0.643649, 0.641793, 0.43855 ), AABB( -1.2443, 2.63177, -0.536025, 0.876247, 1.09979, 0.700397 ), AABB( -1.2443, 3.02993, -0.631524, 0.788396, 0.730537, 0.719675 ) ],
 "vertex_count": 232
 }
 
-[sub_resource type="ArrayMesh" id=69]
+[sub_resource type="ArrayMesh" id=5]
 resource_name = "Character_CUBezierCurve003"
 surfaces/0 = {
 "aabb": AABB( -0.925717, 1.41564, -0.73674, 1.85143, 2.05668, 1.48327 ),
@@ -189,7 +189,7 @@ surfaces/0 = {
 "blend_shape_data": [  ],
 "format": 2194883,
 "index_count": 2820,
-"material": ExtResource( 4 ),
+"material": ExtResource( 5 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.925717, 1.41564, -0.73674, 1.85143, 2.05668, 1.48327 ) ],
 "vertex_count": 542
@@ -201,7 +201,7 @@ surfaces/1 = {
 "blend_shape_data": [  ],
 "format": 2194883,
 "index_count": 336,
-"material": ExtResource( 7 ),
+"material": ExtResource( 4 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.618305, 2.03024, 0.57408, 1.23661, 0.481855, 0.147413 ) ],
 "vertex_count": 90
@@ -213,7 +213,7 @@ surfaces/2 = {
 "blend_shape_data": [  ],
 "format": 2194883,
 "index_count": 384,
-"material": ExtResource( 6 ),
+"material": ExtResource( 7 ),
 "primitive": 4,
 "skeleton_aabb": [ AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( 0, 0, 0, -1, -1, -1 ), AABB( -0.769438, 1.54787, 0.418849, 1.53888, 1.17635, 0.406863 ) ],
 "vertex_count": 81
@@ -243,7 +243,7 @@ surfaces/4 = {
 "vertex_count": 48
 }
 
-[sub_resource type="Animation" id=70]
+[sub_resource type="Animation" id=6]
 resource_name = "Death"
 length = 0.958333
 tracks/0/type = "transform"
@@ -643,7 +643,7 @@ tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = PoolRealArray( 0, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 2.08333, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=71]
+[sub_resource type="Animation" id=8]
 resource_name = "HitReact"
 length = 0.75
 tracks/0/type = "transform"
@@ -843,10 +843,9 @@ tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = PoolRealArray( 0, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.0666667, 1, -5.96046e-08, 0.169277, -0.0673822, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.133333, 1, -1.78814e-07, 0.503213, -0.200308, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.2, 1, -1.78814e-07, 0.695354, -0.276791, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.266667, 1, -1.78814e-07, 0.687478, -0.273656, -3.90301e-40, -5.68434e-14, -6.86625e-27, 1, 1, 1, 1, 0.333333, 1, -1.78814e-07, 0.624343, -0.248525, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.4, 1, -1.78814e-07, 0.515122, -0.205049, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.6, 1, -5.96046e-08, 0.121471, -0.0483524, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.666667, 1, 0, 0.0372562, -0.0148301, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.733333, 1, 0, 0.00370617, -0.00147521, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.75, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=72]
+[sub_resource type="Animation" id=9]
 resource_name = "Idle"
 length = 2.08333
-loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("CharacterArmature/Skeleton:Foot.L")
 tracks/0/interp = 1
@@ -1244,7 +1243,7 @@ tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = PoolRealArray( 0, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 2.08333, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=73]
+[sub_resource type="Animation" id=11]
 resource_name = "Idle_Shoot"
 length = 0.708333
 tracks/0/type = "transform"
@@ -1444,7 +1443,7 @@ tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = PoolRealArray( 0, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.708333, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=74]
+[sub_resource type="Animation" id=12]
 resource_name = "Jump"
 length = 0.458333
 tracks/0/type = "transform"
@@ -1844,7 +1843,7 @@ tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = PoolRealArray( 0, 1, 0, 0.254886, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.625, 1, 0, 0.254886, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=75]
+[sub_resource type="Animation" id=14]
 resource_name = "Jump_Land"
 length = 0.458333
 tracks/0/type = "transform"
@@ -2044,7 +2043,7 @@ tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = PoolRealArray( 0, 1, 0, 0.254886, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.0666667, 1, 0, 0.114268, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.133333, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.458333, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=76]
+[sub_resource type="Animation" id=15]
 resource_name = "No"
 length = 2.08333
 tracks/0/type = "transform"
@@ -2444,7 +2443,7 @@ tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = PoolRealArray( 0, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 1.08333, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=77]
+[sub_resource type="Animation" id=17]
 resource_name = "Run"
 length = 0.708333
 tracks/0/type = "transform"
@@ -2637,7 +2636,7 @@ tracks/26/imported = false
 tracks/26/enabled = true
 tracks/26/keys = PoolRealArray( 0, 1, 1.19209e-07, 0.365723, 0.190812, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.0666667, 1, 1.19209e-07, 0.245658, 0.146588, 0.0321474, -1.07553e-13, -2.29936e-08, 0.999483, 1, 1, 1, 0.133333, 1, 0, -0.0571132, 0.0350687, 0.113991, -5.31933e-14, -8.1533e-08, 0.993482, 1, 1, 1, 0.2, 1, -5.96046e-08, -0.451125, -0.110058, 0.220127, -4.18836e-14, -1.57447e-07, 0.975471, 1, 1, 1, 0.266667, 1, -1.78814e-07, -0.753896, -0.221578, 0.29937, -1.48939e-14, -2.14126e-07, 0.954137, 1, 1, 1, 0.333333, 1, -1.78814e-07, -0.873961, -0.265801, 0.329888, 1.50536e-14, -2.35954e-07, 0.94402, 1, 1, 1, 0.4, 1, -1.78814e-07, -0.778868, -0.230775, 0.305773, 1.49257e-14, -2.18706e-07, 0.952104, 1, 1, 1, 0.466667, 1, -1.19209e-07, -0.532887, -0.140173, 0.241809, -3.66137e-14, -1.72955e-07, 0.970324, 1, 1, 1, 0.6, 1, 5.96046e-08, 0.131714, 0.104619, 0.0628631, 1.45727e-14, -4.49632e-08, 0.998022, 1, 1, 1, 0.666667, 1, 1.19209e-07, 0.331764, 0.178304, 0.00905035, -3.73883e-14, -6.47336e-09, 0.999959, 1, 1, 1, 0.708333, 1, 1.19209e-07, 0.365723, 0.190812, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=78]
+[sub_resource type="Animation" id=18]
 resource_name = "Run_Gun"
 length = 0.708333
 tracks/0/type = "transform"
@@ -3037,10 +3036,9 @@ tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = PoolRealArray( 0, 1, 1.19209e-07, 0.365723, 0.190812, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 0.0666667, 1, 1.19209e-07, 0.245658, 0.146588, 0.0321474, -1.07553e-13, -2.29936e-08, 0.999483, 1, 1, 1, 0.133333, 1, 0, -0.0571132, 0.0350687, 0.113991, -5.31933e-14, -8.1533e-08, 0.993482, 1, 1, 1, 0.2, 1, -5.96046e-08, -0.451125, -0.110058, 0.220127, -4.18836e-14, -1.57447e-07, 0.975471, 1, 1, 1, 0.266667, 1, -1.78814e-07, -0.753896, -0.221578, 0.29937, -1.48939e-14, -2.14126e-07, 0.954137, 1, 1, 1, 0.333333, 1, -1.78814e-07, -0.873961, -0.265801, 0.329888, 1.50536e-14, -2.35954e-07, 0.94402, 1, 1, 1, 0.4, 1, -1.78814e-07, -0.778868, -0.230775, 0.305773, 1.49257e-14, -2.18706e-07, 0.952104, 1, 1, 1, 0.466667, 1, -1.19209e-07, -0.532887, -0.140173, 0.241809, -3.66137e-14, -1.72955e-07, 0.970324, 1, 1, 1, 0.6, 1, 5.96046e-08, 0.131714, 0.104619, 0.0628631, 1.45727e-14, -4.49632e-08, 0.998022, 1, 1, 1, 0.666667, 1, 1.19209e-07, 0.331764, 0.178304, 0.00905035, -3.73883e-14, -6.47336e-09, 0.999959, 1, 1, 1, 0.708333, 1, 1.19209e-07, 0.365723, 0.190812, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=79]
+[sub_resource type="Animation" id=20]
 resource_name = "Walk"
 length = 1.25
-loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("CharacterArmature/Skeleton:Foot.L")
 tracks/0/interp = 1
@@ -3231,7 +3229,7 @@ tracks/26/imported = false
 tracks/26/enabled = true
 tracks/26/keys = PoolRealArray( 0, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 1.25, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=80]
+[sub_resource type="Animation" id=21]
 resource_name = "Walk_Gun"
 length = 1.25
 tracks/0/type = "transform"
@@ -3624,7 +3622,7 @@ tracks/27/imported = false
 tracks/27/enabled = true
 tracks/27/keys = PoolRealArray( 0, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1, 2.08333, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.27014e-27, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=81]
+[sub_resource type="Animation" id=23]
 resource_name = "Yes"
 length = 2.08333
 tracks/0/type = "transform"
@@ -4024,39 +4022,40 @@ bones/28/bound_children = [  ]
 
 [node name="Arms" type="MeshInstance" parent="CharacterArmature/Skeleton"]
 mesh = SubResource( 1 )
-skin = SubResource( 67 )
+skin = SubResource( 2 )
 
 [node name="Body" type="MeshInstance" parent="CharacterArmature/Skeleton"]
-mesh = SubResource( 68 )
-skin = SubResource( 67 )
+mesh = SubResource( 3 )
+skin = SubResource( 2 )
 
 [node name="Ears" type="MeshInstance" parent="CharacterArmature/Skeleton"]
 mesh = SubResource( 4 )
-skin = SubResource( 67 )
+skin = SubResource( 2 )
 
 [node name="Head" type="MeshInstance" parent="CharacterArmature/Skeleton"]
-mesh = SubResource( 69 )
-skin = SubResource( 67 )
+mesh = SubResource( 5 )
+skin = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Death = SubResource( 70 )
+root_node = NodePath("")
+anims/Death = SubResource( 6 )
 anims/Duck = SubResource( 7 )
-anims/HitReact = SubResource( 71 )
-anims/Idle = SubResource( 72 )
+anims/HitReact = SubResource( 8 )
+anims/Idle = SubResource( 9 )
 anims/Idle_Gun = SubResource( 10 )
-anims/Idle_Shoot = SubResource( 73 )
-anims/Jump = SubResource( 74 )
+anims/Idle_Shoot = SubResource( 11 )
+anims/Jump = SubResource( 12 )
 anims/Jump_Idle = SubResource( 13 )
-anims/Jump_Land = SubResource( 75 )
-anims/No = SubResource( 76 )
+anims/Jump_Land = SubResource( 14 )
+anims/No = SubResource( 15 )
 anims/Punch = SubResource( 16 )
-anims/Run = SubResource( 77 )
-anims/Run_Gun = SubResource( 78 )
+anims/Run = SubResource( 17 )
+anims/Run_Gun = SubResource( 18 )
 anims/Run_Shoot = SubResource( 19 )
-anims/Walk = SubResource( 79 )
-anims/Walk_Gun = SubResource( 80 )
+anims/Walk = SubResource( 20 )
+anims/Walk_Gun = SubResource( 21 )
 anims/Wave = SubResource( 22 )
-anims/Yes = SubResource( 81 )
+anims/Yes = SubResource( 23 )
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource( 112 )
