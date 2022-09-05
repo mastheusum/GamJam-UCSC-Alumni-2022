@@ -27,7 +27,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Gui="*res://Instantiable/GUI.tscn"
-Hud="*res://Instantiable/HUD.tscn"
+HUD="*res://Instantiable/HUD.tscn"
 
 [input]
 

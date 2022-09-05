@@ -1,64 +1,81 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Resources/Sprites/Atlas/Options.tres" type="Texture" id=1]
+[ext_resource path="res://Resources/Sprites/Coin.tres" type="Texture" id=1]
 [ext_resource path="res://Resources/Sprites/Atlas/complete_heart.tres" type="Texture" id=2]
 [ext_resource path="res://Resources/Sprites/Atlas/nolife_health.tres" type="Texture" id=3]
-[ext_resource path="res://Resources/Sprites/Atlas/hud_coins.tres" type="Texture" id=4]
+[ext_resource path="res://Resources/Fonts/PasseroOne-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Scripts/HUD.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
 
 [node name="HUD" type="CanvasLayer"]
+pause_mode = 2
+script = ExtResource( 5 )
 
-[node name="HudCoins" type="TextureRect" parent="."]
-margin_left = 4.0
-margin_top = 4.0
-margin_right = 20.0
-margin_bottom = 20.0
-rect_scale = Vector2( 2, 2 )
-texture = ExtResource( 4 )
-
-[node name="Options" type="TextureButton" parent="."]
-margin_left = 972.0
-margin_top = 4.0
-margin_right = 988.0
-margin_bottom = 20.0
-rect_scale = Vector2( 3, 3 )
-texture_normal = ExtResource( 1 )
-
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="Hearts" type="HBoxContainer" parent="."]
 margin_left = 4.0
 margin_top = 554.0
 margin_right = 44.0
 margin_bottom = 594.0
 rect_min_size = Vector2( 44, 44 )
-custom_constants/separation = 33
+custom_constants/separation = 0
 
-[node name="TextureProgress1" type="TextureProgress" parent="HBoxContainer"]
-margin_right = 11.0
-margin_bottom = 11.0
-rect_min_size = Vector2( 11, 11 )
-rect_scale = Vector2( 4, 4 )
-value = 70.0
+[node name="Heart 1" type="TextureProgress" parent="Hearts"]
+margin_right = 44.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 44, 44 )
+max_value = 2.0
+value = 2.0
 texture_under = ExtResource( 3 )
 texture_progress = ExtResource( 2 )
-fill_mode = 3
+nine_patch_stretch = true
 
-[node name="TextureProgress2" type="TextureProgress" parent="HBoxContainer"]
+[node name="Heart 2" type="TextureProgress" parent="Hearts"]
 margin_left = 44.0
-margin_right = 55.0
-margin_bottom = 11.0
-rect_min_size = Vector2( 11, 11 )
-rect_scale = Vector2( 4, 4 )
-value = 70.0
+margin_right = 88.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 44, 44 )
+min_value = 2.0
+max_value = 4.0
+value = 4.0
 texture_under = ExtResource( 3 )
 texture_progress = ExtResource( 2 )
-fill_mode = 3
+nine_patch_stretch = true
 
-[node name="TextureProgress3" type="TextureProgress" parent="HBoxContainer"]
+[node name="Heart 3" type="TextureProgress" parent="Hearts"]
 margin_left = 88.0
-margin_right = 99.0
-margin_bottom = 11.0
-rect_min_size = Vector2( 11, 11 )
-rect_scale = Vector2( 4, 4 )
-value = 70.0
+margin_right = 132.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 44, 44 )
+min_value = 4.0
+max_value = 6.0
+value = 6.0
 texture_under = ExtResource( 3 )
 texture_progress = ExtResource( 2 )
-fill_mode = 3
+nine_patch_stretch = true
+
+[node name="Coins" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Icon" type="TextureRect" parent="Coins"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 34.0
+margin_bottom = 34.0
+rect_scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+stretch_mode = 1
+
+[node name="Value" type="RichTextLabel" parent="Coins"]
+margin_left = 64.0
+margin_right = 192.0
+margin_bottom = 64.0
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = "[center]99"
+text = "99"
