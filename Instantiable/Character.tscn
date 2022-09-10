@@ -847,6 +847,7 @@ tracks/27/keys = PoolRealArray( 0, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.270
 [sub_resource type="Animation" id=9]
 resource_name = "Idle"
 length = 2.08333
+loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("CharacterArmature/Skeleton:Foot.L")
 tracks/0/interp = 1
@@ -2447,6 +2448,7 @@ tracks/27/keys = PoolRealArray( 0, 1, 0, 0, 0, -4.1326e-40, -5.68434e-14, -7.270
 [sub_resource type="Animation" id=17]
 resource_name = "Run"
 length = 0.708333
+loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("CharacterArmature/Skeleton:Foot.L")
 tracks/0/interp = 1
@@ -3040,6 +3042,7 @@ tracks/27/keys = PoolRealArray( 0, 1, 1.19209e-07, 0.365723, 0.190812, -4.1326e-
 [sub_resource type="Animation" id=20]
 resource_name = "Walk"
 length = 1.25
+loop = true
 tracks/0/type = "transform"
 tracks/0/path = NodePath("CharacterArmature/Skeleton:Foot.L")
 tracks/0/interp = 1

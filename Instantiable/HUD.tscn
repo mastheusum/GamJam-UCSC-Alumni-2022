@@ -24,7 +24,7 @@ margin_bottom = 594.0
 rect_min_size = Vector2( 44, 44 )
 custom_constants/separation = 0
 
-[node name="Heart 1" type="TextureProgress" parent="Hearts"]
+[node name="First" type="TextureProgress" parent="Hearts"]
 margin_right = 44.0
 margin_bottom = 44.0
 rect_min_size = Vector2( 44, 44 )
@@ -34,7 +34,7 @@ texture_under = ExtResource( 3 )
 texture_progress = ExtResource( 2 )
 nine_patch_stretch = true
 
-[node name="Heart 2" type="TextureProgress" parent="Hearts"]
+[node name="Second" type="TextureProgress" parent="Hearts"]
 margin_left = 44.0
 margin_right = 88.0
 margin_bottom = 44.0
@@ -46,7 +46,7 @@ texture_under = ExtResource( 3 )
 texture_progress = ExtResource( 2 )
 nine_patch_stretch = true
 
-[node name="Heart 3" type="TextureProgress" parent="Hearts"]
+[node name="Third" type="TextureProgress" parent="Hearts"]
 margin_left = 88.0
 margin_right = 132.0
 margin_bottom = 44.0

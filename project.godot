@@ -13,14 +13,20 @@ _global_script_classes=[ {
 "class": "Character",
 "language": "GDScript",
 "path": "res://Scripts/CharacterController.gd"
+}, {
+"base": "KinematicBody",
+"class": "LittleMonster",
+"language": "GDScript",
+"path": "res://Scripts/LittleMonster.gd"
 } ]
 _global_script_class_icons={
-"Character": ""
+"Character": "",
+"LittleMonster": ""
 }
 
 [application]
 
-config/name="GameJam UCSC Alumni"
+config/name="Platformer 3D - The Game"
 run/main_scene="res://Scenes/World.tscn"
 config/icon="res://icon.png"
 
