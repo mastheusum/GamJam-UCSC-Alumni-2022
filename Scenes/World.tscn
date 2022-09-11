@@ -2296,6 +2296,7 @@ material/0 = SubResource( 56 )
 shape = SubResource( 276 )
 
 [node name="Character" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 5, -7 )
 camera_offset_path = NodePath("../CameraOffset")
 
 [node name="CameraOffset" type="Spatial" parent="."]
@@ -2598,10 +2599,37 @@ shape = SubResource( 194 )
 [node name="Coin2" parent="Objects" instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3, -7 )
 
+[node name="Coin3" parent="Objects" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 3, 26 )
+
+[node name="Coin4" parent="Objects" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3, 26 )
+
+[node name="Coin5" parent="Objects" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 5, 64 )
+
+[node name="Coin6" parent="Objects" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 7, 64 )
+
+[node name="Coin7" parent="Objects" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 3, 72 )
+
+[node name="Coin8" parent="Objects" instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -72, 3, 98 )
+
 [node name="Enemies" type="Spatial" parent="."]
 
 [node name="LittleMonster" parent="Enemies" instance=ExtResource( 14 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 2, 20 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 2, 29 )
+
+[node name="LittleMonster2" parent="Enemies" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, 2 )
+
+[node name="LittleMonster3" parent="Enemies" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, 42 )
+
+[node name="LittleMonster4" parent="Enemies" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, 65 )
 
 [node name="Skull" type="KinematicBody" parent="Enemies"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2, 27 )

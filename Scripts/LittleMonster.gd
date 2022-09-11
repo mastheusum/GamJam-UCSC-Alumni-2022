@@ -53,3 +53,9 @@ func _on_NavAgent_path_changed():
 #	print("Change > ", $NavAgent.get_nav_path()[-1])
 #	if $IA.target:
 #		print("Target pos > ", $IA.target.global_transform.origin)
+
+
+func _on_Area_body_entered(body : Node):
+	if body.is_in_group("Player"):
+		(body as Character).jump(1.5)
+		queue_free()

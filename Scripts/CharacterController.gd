@@ -30,8 +30,7 @@ func _physics_process(delta):
 	if is_on_floor():
 		_is_on_jump = false
 		if Input.is_action_just_pressed("ui_jump"):
-			velocity.y = jump_power
-			_is_on_jump = true
+			jump()
 	
 	dir = _camera_offset.global_transform.basis.z * Input.get_action_raw_strength("ui_up")
 	velocity.x = dir.x * speed
@@ -44,6 +43,10 @@ func _physics_process(delta):
 	_snap = Vector3.DOWN if not _is_on_jump else Vector3.ZERO
 	velocity = move_and_slide_with_snap(velocity, _snap, Vector3.UP, true)
 	animate()
+
+func jump(scale = 1):
+	velocity.y = jump_power * scale
+	_is_on_jump = true
 
 func animate():
 	anim['parameters/conditions/walkAnim'] = _is_on_walk and not _is_on_jump
