@@ -2313,6 +2313,7 @@ near = 0.01
 
 [node name="Elements" type="Spatial" parent="Enviroment"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 29.7384, 0 )
+visible = false
 
 [node name="Tree" type="MeshInstance" parent="Enviroment/Elements"]
 mesh = SubResource( 124 )
